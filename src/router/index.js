@@ -13,6 +13,7 @@ import EventService from '@/services/EventService.js'
 import GStore from '@/store'
 import OrganizerService from '@/services/OrganizerService.js'
 import Login from '@/views/LoginForm.vue'
+import Register from '@/views/RegistrationForm.vue'
 
 const routes = [
   {
@@ -91,9 +92,14 @@ const routes = [
     props: true
   },
   {
-  path: '/login',
+    path: '/login',
     name: 'Login',
     component: Login
+  },
+  {
+    path: '/registers',
+    name: 'Register',
+    component: Register
   },
   {
     path: '/:catchAll(.*)',
